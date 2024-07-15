@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background:radial-gradient(circle, #f8f7f7 50%, #f9630c) no-repeat;;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:auto;
+  }
+  header {
+    background:radial-gradient(circle, #932703 50%, #f9630c) no-repeat;
+    color: #f9f4f4;
+    padding: 15px;
+    
+   
+  }
+  header img {
+    background-color: white;
+    width: 140px; /* Adjust the size of your logo */
+    height:90px;
+    border-radius: 20px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(103, 4, 4, 0.921);
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }  
+  .nav-links li {
+    margin-right: 30px; /* Adjust spacing between items */
+  }
+  .logo-name{
+    font-family:'Courier New', Courier, monospace;
+    font-size: large;
+    font-weight:bolder;
+    
+  }
+  /* Additional styles for links as needed */
+ .nav-links a {
+   text-decoration: none;
+   color: rgb(252, 246, 246);
+   font-weight: bold;
+   font-size: 16px;
+   transition: color 0.3s ease;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+   
+ .nav-links a:hover {
+   color: #e9ec30;
+ }
+
+.about-container {
+    padding: 50px;
+    background-color: #932703fd;
+    border-radius: 20px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    
+  }
+  
+  .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    color: #e1e1e1;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    color: #fefefe;
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  

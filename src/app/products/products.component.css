@@ -1,0 +1,139 @@
+/* Add your global styles here */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background:radial-gradient(circle, #932703 50%, #f9630c) no-repeat;
+    color: #f9f4f4;
+    padding: 15px;
+    
+   
+  }
+ 
+  header img {
+    background-color: white;
+    width: 140px; /* Adjust the size of your logo */
+    height:90px;
+    border-radius: 20px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(103, 4, 4, 0.921);
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }  
+  .nav-links li {
+    margin-right: 30px; /* Adjust spacing between items */
+  }
+  
+  /* Additional styles for links as needed */
+  .nav-links a {
+    text-decoration: none;
+    color: rgb(252, 246, 246);
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #e9ec30;
+  }
+  .search-container {
+    justify-content: right;
+    margin: 20px;
+    margin-left: 400px;
+    align-items: right;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius:20px;
+    width: 400px;
+  }
+  
+  .outer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left, space-evenly;
+    margin: 30px;
+    align-items:flex-start;
+  }
+  
+  .product-card {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    width: 215px; 
+    height: auto;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;    
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product-card img {
+    width: 100%;;
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+  
+  .product-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .logo-name{
+    font-family:'Courier New', Courier, monospace;
+    font-size: large;
+    font-weight:bolder;
+    
+  }
+  button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 25px; /* Adjust the value to control the roundness */
+    background-color: #650b03; /* Add your preferred background color */
+    color: white;
+    border: none;
+  }
+  
+  /* Add hover effect if desired */
+  button:hover {
+    background-color: #e55820; /* Change the color on hover */
+  }
+  .buy{
+    background-color: #c41d44;
+    color: white;
+    padding: 12px 20px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }

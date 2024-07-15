@@ -1,0 +1,30 @@
+<!-- product-list.component.html -->
+<header>
+  <img src="http://www.hindigraphics.in/wp-content/uploads/2019/01/pro.png" alt="Provision Store Logo" />
+  <span class="search-container">
+    <input type="text" placeholder="Search for your favorites" id="search" [(ngModel)]="searchTerm" (input)="filterProducts()" />
+    <button (click)="filterProducts()">Enter</button>
+  </span>
+  <div class="logo-name">Welcome to Provision Store!!</div>
+</header>
+<body>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#">Profile</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+  </nav>
+  
+  <div class="outer">
+    <div *ngFor="let product of products">
+      <span class="products-container">
+        <div class="product-card">
+          <img [src]="product.productCategory.productCategoryImage" alt="{{ product.productCategory.productCategoryName }}" />
+          <div class="product-name">{{ product.productCategory.productCategoryName }}</div>
+          <button class="buy">Buy </button>
+        </div>
+      </span>
+    </div>
+  </div>
+</body>

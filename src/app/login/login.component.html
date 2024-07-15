@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Provision Store</title>
+</head>
+<body>
+  <header>
+    <img src="http://www.hindigraphics.in/wp-content/uploads/2019/01/pro.png" alt="Provision Store Logo">
+    <h1>Provision Store</h1>
+  </header>
+  <form (ngSubmit)="login()" #loginForm="ngForm">
+    <label>Email:</label>
+    <input type="email" name="email" [(ngModel)]="emailid" required email />
+    <div *ngIf="loginForm.controls['email'].invalid && (loginForm.controls['email'].dirty || loginForm.controls['email'].touched)">
+      <div *ngIf="loginForm.controls['email'].errors?.['required']">Email is required.</div>
+      <div *ngIf="loginForm.controls['email'].errors?.['email']">Invalid email format.</div>
+    </div>
+
+    <label>Password:</label>
+    <input
+      type="password"
+      name="password"
+      [(ngModel)]="password"
+      required
+      minlength="8"
+      [pattern]="getPasswordPattern()"
+    />
+    <div *ngIf="loginForm.controls['password'].invalid && (loginForm.controls['password'].dirty || loginForm.controls['password'].touched)">
+      <div *ngIf="loginForm.controls['password'].errors?.['required']">Password is required.</div>
+      <div *ngIf="loginForm.controls['password'].errors?.['minlength']">Password must be at least 8 characters long.</div>
+      <div *ngIf="loginForm.controls['password'].errors?.['pattern']">Password must meet the criteria.</div>
+    </div>
+
+    <button type="submit" [disabled]="loginForm.invalid"><a href ="/products" style="text-decoration: none; color:azure; font-weight:bold">Login</a></button>
+  </form>
+</body>
+</html>
